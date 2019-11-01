@@ -1,5 +1,9 @@
 body {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  align-content: center;
+  align-items: center;
   background-position: center;
 	/* adjusts the size to the window */
 	background-size: cover;
@@ -7,7 +11,8 @@ body {
   background-image: url('images/background-brown-carpentry-326311.jpg');
 }
 
-h1 {
+body h1 {
+  text-align: center;
   font-size: 5rem;
   color: #DBEDF3;
   font-family: "Arvo", cursive;
@@ -18,15 +23,18 @@ h1 {
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
 }
 
-.w {
-  background-image: url("images/tom1.png");
-}
+
 
 .a {
   background-image: url("images/tom1.png");
-
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 .s {
@@ -58,11 +66,19 @@ footer {
 }
 
 .set {
+
   margin: 10% auto;
 }
 
+
 .set .f {
   margin-right: 80px;
+}
+
+@media only screen and (max-width: 1476px) {
+  .set .f {
+    margin-right: 0px;
+  }
 }
 
 .pressed {
@@ -86,4 +102,63 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: #fff;
+}
+
+@media only screen and (max-width: 1396px) {
+  .drum {
+    outline: none;
+    border: 10px solid rgb(72, 73, 75);
+    font-size: 5rem;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: #000;
+    text-shadow: 3px 0 20px white;
+    border-radius: 50px;
+    display: inline-block;
+    width: 145px;
+    height: 150px;
+    text-align: center;
+    margin: 3px;
+    background-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1262px) {
+  .drum {
+    outline: none;
+    border: 10px solid rgb(72, 73, 75);
+    font-size: 5rem;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: #000;
+    text-shadow: 3px 0 20px white;
+    border-radius: 50px;
+    display: inline-block;
+    width: 130px;
+    height: 150px;
+    text-align: center;
+    margin: 1px;
+    background-color: #fff;
+  }
+}
+@media only screen and (max-width: 1094px) {
+  .drum {
+    outline: none;
+    border: 5px solid rgb(72, 73, 75);
+    font-size: 5rem;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: #000;
+    text-shadow: 3px 0 20px white;
+    border-radius: 50px;
+    display: inline-block;
+    width: 110px;
+    height: 130px;
+    text-align: center;
+    margin: 1px;
+    background-color: #fff;
+  }
 }
